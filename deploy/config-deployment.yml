@@ -19,4 +19,3 @@ spec:
         image: 127.0.0.1:30400/config-service
         ports:
         - containerPort: 8088
-      priorityClassName: configuration-priority
