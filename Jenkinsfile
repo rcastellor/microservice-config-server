@@ -26,6 +26,6 @@ node {
 
     stage "Deploy"
 
-        kubernetesDeploy configs: "deploy/*.yaml", kubeconfigId: 'minikube_kubeconfig'
+        kubernetesDeploy configs: "deploy/*.yml", kubeconfigId: 'minikube_kubeconfig'
 
 }
