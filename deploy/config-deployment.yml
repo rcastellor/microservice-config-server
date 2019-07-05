@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: config-service
-        image: 127.0.0.1:30400/config-service
+        image: 127.0.0.1:30400/config-service:$BUILD_TAG
         ports:
         - containerPort: 8088
