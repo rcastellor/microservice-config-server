@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: config-service
-        image: 192.168.99.107:5000/config-service
+        image: 127.0.0.1:5000/config-service
         ports:
         - containerPort: 8088
       priorityClassName: configuration-priority
