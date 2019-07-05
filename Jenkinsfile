@@ -12,6 +12,10 @@ node {
     imageName = "${registryHost}${appName}:${tag}"
     env.BUILDIMG=imageName
 
+    stage "Compile"
+
+       sh "./mvnw clean package"
+
     stage "Build"
     
         sh "docker build -t ${imageName} -f Dockerfile ."
